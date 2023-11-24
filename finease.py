@@ -4,7 +4,7 @@ import sqlite3
 class FinEase:
     def __init__(self, page: ft.Page):
         self.page = page
-        self.page.bgcolor = ft.colors.BLACK
+        self.page.bgcolor = ft.colors.WHITE
         self.page.window_width = 400
         self.page.window_heigth = 450
         self.page.window_resizable = False
