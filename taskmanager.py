@@ -1,7 +1,7 @@
 import flet as ft
 import sqlite3
 
-class FinEase:
+class TaskManager:
     def __init__(self, page: ft.Page):
         self.page = page
         self.page.bgcolor = ft.colors.WHITE
@@ -9,7 +9,7 @@ class FinEase:
         self.page.window_heigth = 450
         self.page.window_resizable = False
         self.page.window_always_on_top = True
-        self.page.title = 'FinEase'
+        self.page.title = 'TaskManager'
         self.task = ''
         self.view = 'all'
         self.db_execute('CREATE TABLE IF NOT EXISTS tasks(name, status)')
@@ -115,4 +115,4 @@ class FinEase:
 
         self.page.add(input_bar, tabs, tasks)
 
-ft.app(target = FinEase)
+ft.app(target = TaskManager)
